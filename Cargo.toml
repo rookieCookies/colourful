@@ -1,0 +1,10 @@
+[package]
+name = "colourful"
+version = "0.1.0"
+edition = "2021"
+description = "A lightweight, fast, and easy-to-use library for creating coloured strings with ANSI"
+license = "MIT"
+homepage = "https://github.com/rookieCookies/colourful"
+repository = "https://github.com/rookieCookies/colourful"
+documentation = "https://docs.rs/colourful"
+readme = "README.md"
