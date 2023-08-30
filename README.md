@@ -20,7 +20,7 @@ println!("or debug.. who am i to judge {:#?}", vec!["mhm", "sup", "okay"].strike
 ```
 
 # Features
-- No other dependancies
+- No other dependencies
 - Allocation free
 - *Blazingly fast*
 - Does not emit colours when piping to a file
@@ -29,12 +29,10 @@ println!("or debug.. who am i to judge {:#?}", vec!["mhm", "sup", "okay"].strike
 
 
 # Usage
-1) Add the dependancy to your crate
+1) Add the dependency to your crate
 2) Import `colourful::ColourBrush`
 3) You're good to go!
 
 
 ## no_std
-the base crate relies on reading environment variables to abide by `NO_COLOR`, `FORCE_COLOR` and 
-not print colours when piping. the crate should be able to compile with `no_std` without you needing
-to do anything, but these features won't be available
+The base crate relies on reading environment variables to abide by `NO_COLOR`, and `FORCE_COLOR` and not print colours when piping. The crate should be able to compile with `no_std` without you needing to do anything, but these features won't be available
