@@ -43,21 +43,8 @@ fn init_metadata() -> (bool, bool, bool) {
 }
 
 
-pub enum Operation {
-    Colour(Colour), BgColour(Colour),
-    Bold,
-    Dim,
-    Italic,
-    Underline,
-    Blinking,
-    Inverse,
-    Hidden,
-    Strikethrough,
-    Reset,
-}
 
-
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, PartialEq, Debug)]
 pub struct Colour {
     r: u8,
     g: u8,
@@ -69,6 +56,7 @@ impl Colour {
 }
 
 
+#[derive(Clone, Copy, PartialEq)]
 pub struct ColouredString<T> {
     string: T,
 
